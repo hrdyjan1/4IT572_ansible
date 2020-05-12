@@ -1,0 +1,11 @@
+The reason, why I have chosen this method, my OS is Windows 10.
+I had an error in hosts: localhost
+
+
+1. Setup credentials 
+    1.1 ~/.aws/credentials (do not forget to add aws_session_token)
+        aws_access_key_id = ASIAY3I3AAQOLCUB****
+        aws_secret_access_key = TqdmcaGNzRTOrc0vBSy5nAUegTRW0KNTSxVo****
+        aws_session_token = ****ZXIvYXdzEGkaDAe7y0eFZjk+afUBvCLBAYnOPMrqFqMeezmFAJLab54ufcf513de9IEmPbyKLCOuCmANt64Sq8jUzn9/FisTjMmh1qHXgFK2p4hKGzX98MEcm7HIZWHTXzDLUQ14lSuibpS0ba36MyddgtjmLQqtoSKSl5CpURn2WPQxXbAW5W8TcuaA8aAy5L1vZB56UehcjRG0KMrlRN8ttkn1zkcM68uUXuALdxKvi1bU4/cl39dFto3uNxvdhRADVOU2KVnN0x8FMrR+5DyKKF0WuOF1BuYo7ZTG9QUyLXetxfTckQQ/AF4HDtfcNPTmnp5lu/qDi+dhJys7eu6yLs3O8wvd/HtvAqTAwA==
+2. Run command line
+    2.1 aws ec2 run-instances --image-id ami-085925f297f89fce1 --key-name presentation --instance-type t2.micro --region us-east-1 --count 1
